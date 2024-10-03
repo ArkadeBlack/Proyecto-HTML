@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        font-family: "Arial", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+
+      h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #c8f58e;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 20vw;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: 80%;
+        
+      }
+
+      div.desc {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .centrado {
+        display: flex;
+        justify-content: center;
+      }
+      .footer {
+        background-color: #0e0d0d;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
+    <title>Viveros ML</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>🌱 Viveros MosaLosha</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preferencias.html">Preferencias</a></li>
+          <li><a class="active" href="multimedia.html">Multimedia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 style="margin: 15px">Multimedia</h2>
+    <hr />
+
+    <div class="centrado">
+    <video src="/assets/video/videoplayback.mp4" width="800px" controls muted></video>
+  </div>
+  <small class="centrado">
+    Video perteneciente a Casi creativo - Fred Lammie - creditos al debido
+    autor.
+  </small>
+  <br>
+
+    <section class="centrado">
+      <div class="gallery">
+        <a href="/assets/img/planta1.png" target="_blank"
+          ><img src="/assets/img/planta1.png" alt="Potus" width="600px"
+        /></a>
+        <div class="desc"><strong>Potus</strong></div>
+      </div>
+      <div class="gallery">
+        <a href="/assets/img/planta5.png" target="_blank"
+          ><img src="/assets/img/planta5.png" alt="img1" width="900px"
+        /></a>
+        <div class="desc"><strong>Potus 2</strong></div>
+      </div>
+      <div class="gallery">
+        <a href="/assets/img/planta3.png" target="_blank"
+          ><img src="/assets/img/planta3.png" alt="img1" width="600px"
+        /></a>
+        <div class="desc"><strong>Cambiando la tierra</strong></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Derechos reservados MosaLosha &copy; 2024</p>
+    </footer>
+  </body>
+</html>
