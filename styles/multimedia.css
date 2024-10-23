@@ -1,0 +1,117 @@
+body {
+    font-family: "Arial", "Courier New", monospace;
+    background: linear-gradient(to right,
+            rgb(189, 189, 255),
+            rgb(255, 233, 236));
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04aa6d;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #c8f58e;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* galeria de imagenes */
+
+
+/* Contenedor de la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.centrado {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Estilo de cada elemento de la galería */
+.galeria-item {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo de las imágenes dentro de cada elemento */
+.galeria-item img {
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(131, 131, 131);
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+    border: 1px solid #04aa6d;
+}
+
+
+.image {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 25%;
+    border: 2px solid #04aa6d;
+    transition: transform 0.3s ease;
+}
+
+.video {
+    border: 2px solid #363636;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #0e0d0d;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
